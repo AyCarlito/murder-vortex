@@ -16,12 +16,14 @@
     <header class="header">
         <h1 class="header-title">Unresolved Mysteries</h1>
     </header>
+    <form name="killer_choice" action="{{url_for('killer') }}" method="POST">
+        <div class="container">
+            <input type="submit" class="item" name="identified" id="identified-button" value="Identified">
+            <input type="submit" class="item" name="unidentified" id="unidentified-button" value="Unidentified">
+        </div>
+    </form>
 
-    <div class="container">
-        <a class="button" id="random-button">Random Killer</a>
-        <a class="button" id="map-button">Take me to the map</a>
-    </div>
-
+    
     <section class="sticky">
         <div class="bubbles">
             <div class="bubble"></div>
