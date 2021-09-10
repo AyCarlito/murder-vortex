@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murder Vortex</title>
+    <link href="http://fonts.googleapis.com/css?family=Bebas+Neue" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/bubbles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="header-title">Murder Vortex</h1>
+    </header>
+    <form name="killer_choice" action="{{url_for('get_killer') }}" method="POST">
+        <div class="container">
+            <input type="submit" class="item" name="identified" id="identified-button" value="Identified">
+            <input type="submit" class="item" name="unidentified" id="unidentified-button" value="Unidentified">
+        </div>
+    </form>
+
+    
+    <section class="sticky">
+        <div class="bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+    </section>
+
+</body>
+
+</html>
