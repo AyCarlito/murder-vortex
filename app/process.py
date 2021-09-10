@@ -16,7 +16,6 @@ def scrape_killer_list(url, id1, killer_type):
     for individual in individuals:
         curr = individual.find('a')['href']
         if (str(curr).startswith("/wiki/List")):
-            print(curr)
             killers+=scrape_single_country(BASE_URL + curr, killer_type)
 
     create_file(killer_type, killers)
@@ -52,9 +51,6 @@ def create_file(filename, killer_urls):
         wr.writerow(killer_urls)
         f.close()
     return
-
-
-
 
 
 def main():

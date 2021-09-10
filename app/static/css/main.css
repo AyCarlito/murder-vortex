@@ -44,7 +44,6 @@ input{
     font-weight: 1000;
     font-family: "Bebas Neue";
     color: #F7F7FF;
-
     transition: all .3s ease-in-out; 
 }
 
@@ -58,10 +57,10 @@ input{
     
    
 }
-
 #identified-button.item:hover{
     background-color: #EB5C76;
 }
+
 
 #unidentified-button.item{
     background-color: #0D7DD3;
