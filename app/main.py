@@ -20,7 +20,7 @@ ALL_KILLERS_URL = "https://en.m.wikipedia.org/wiki/List_of_serial_killers_by_cou
 
 def update_killer_list_and_purge():
     global connections
-    
+
     process.scrape_killer_list(ALL_KILLERS_URL, "mf-section-1", "identified")
     process.scrape_killer_list(ALL_KILLERS_URL, "mf-section-2", "unidentified")
     connections = {}
@@ -53,6 +53,9 @@ def get_killer():
             killers = list(reader)
     except FileNotFoundError as e:
         update_killer_list_and_purge()
+        with open("data/%s_killers.csv" % killer_type, "r") as f:
+            reader = csv.reader(f)
+            killers = list(reader)
     return redirect(BASE_URL + random.choice(killers[0]))
 
 if __name__ == "__main__":
