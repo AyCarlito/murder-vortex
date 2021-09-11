@@ -19,6 +19,8 @@ ALL_KILLERS_URL = "https://en.m.wikipedia.org/wiki/List_of_serial_killers_by_cou
 
 
 def update_killer_list_and_purge():
+    global connections
+    
     process.scrape_killer_list(ALL_KILLERS_URL, "mf-section-1", "identified")
     process.scrape_killer_list(ALL_KILLERS_URL, "mf-section-2", "unidentified")
     connections = {}
