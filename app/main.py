@@ -35,6 +35,6 @@ def get_killer():
     return redirect(BASE_URL + random.choice(killers[0]))
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
 
 
