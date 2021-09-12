@@ -1,3 +1,11 @@
+*{
+    appearance: none;
+    font-weight: 1000;
+    font-family: "Bebas Neue";
+    color: #F7F7FF;
+    text-align: center;
+}
+
 body,html{
     width:100%;
     height: 100%;
@@ -7,15 +15,11 @@ body{
     margin:0;
     padding:0;
     background:#070600;
-    text-align: center;
-    font-family: "Bebas Neue";
-    color: #F7F7FF;
 }
 
 
 .header{
     font-size: 3.5em;
-    font-weight: 1000;
     padding: 0.5em;
     align-items: center;
 }
@@ -34,27 +38,33 @@ body{
   }
 
 input{
-    width: 6em;
+    width: 7em;
     margin: 0.75em;
     padding: 1em;
-
+    
+    -webkit-border-radius: 0.7em;
+    -moz-border-radius: 0.7em;
     border-radius: 0.7em;
     border: none;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
     font-size: 3em;
-    font-weight: 1000;
-    font-family: "Bebas Neue";
-    color: #F7F7FF;
     transition: all .3s ease-in-out; 
 }
 
 .container .item:hover{
-    transform: scale(1.12); 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transform: scale(1.1); 
 }
 
 
 #identified-button.item{
     background-color: #DA1B3E;
-    
    
 }
 #identified-button.item:hover{
